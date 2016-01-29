@@ -1,0 +1,16 @@
+Question 1. What happens when you initialize a repository? Why do you need to do it?
+	I need to initialise a repository so that the meta data contained in the file
+	.git is created, this lets me view log and status of a repository.
+
+Question 2. How is the staging area different from the working directory and the repository? What value do you think it offers?
+	The stagging area holds files ready for a comit. This adds the value of being able to build a comit from specific files.
+
+Question 3. How can you use the staging area to make sure you have one commit per logical change?
+	Using the staging area I can check the changes I've made against the previous commit
+	this helps to make sure that one logical step has been taken between commits.
+
+Question 4. What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+	Branching off from a project would allow for changes to be made experimentally without worrying about changing the original work
+	allowing a new version or building on boiler plate to create specialised work.
+
+Question 5. 
