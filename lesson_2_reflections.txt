@@ -17,4 +17,7 @@ Question 5. How do the diagrams help you visualize the branch structure?
 	Diagrams of branch history help to make perfectly clear where each branch left the master and what additions or subtractions
 	have moved with which branch. 
 
-Question 6. 
+Question 6. What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+	Merging two branches together combines them both to into master. In a diagram they are represented as two paralal time lines
+	showing the commit history of both, this can help to see the changes made in each branch. the command 'git show <commit id>' will
+	show the difference between a commit and its parent. 
