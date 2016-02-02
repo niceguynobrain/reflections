@@ -13,4 +13,8 @@ Question 4. What are some situations when branches would be helpful in keeping y
 	Branching off from a project would allow for changes to be made experimentally without worrying about changing the original work
 	allowing a new version or building on boiler plate to create specialised work.
 
-Question 5. 
+Question 5. How do the diagrams help you visualize the branch structure?
+	Diagrams of branch history help to make perfectly clear where each branch left the master and what additions or subtractions
+	have moved with which branch. 
+
+Question 6. 
