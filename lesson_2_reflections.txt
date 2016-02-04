@@ -21,3 +21,14 @@ Question 6. What is the result of merging two branches together? Why do we repre
 	Merging two branches together combines them both to into master. In a diagram they are represented as two paralal time lines
 	showing the commit history of both, this can help to see the changes made in each branch. the command 'git show <commit id>' will
 	show the difference between a commit and its parent. 
+
+Question 7. What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+	Auto-merging includes all the code from two merges, which should be fine if both commits are functional. 
+	A con is that if the code conflicts in a way that is not directly related to a change both commits have
+	done on the same piece of code, then it could take time to fine the conflict.
+	A pro is that when two pieces of code have been changed git will highlight these using the follow identifiers:
+	<<<< signals code from the current branch/commit
+	>>>> signals code from the original code from which two pieces of code shared a commin ancestor
+	==== signals code from the branch or commit which is being merged into the current. 
+
+
