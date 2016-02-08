@@ -1,24 +1,24 @@
-git status
-git log 
-git diff <commit> <commit>
+GIT STATUS
+GIT LOG 
+GIT DIFF <commit> <commit> 
 
 Get a repository from GitHub to local using,
-"git clone <Url to repository>"
+"GIT CLONE <Url to repository>"
 When cloning a repository a remote is set up automatically.
 
-Reset all files to previous version "git checkout <commit>"
+Reset all files to previous version "GIT CHECKOUT <commit>"
 'HEAD' = current commit.
 'detached HEAD' = current commit is not at the tip of the branch.
 To discard any changes whilst checkout in
- 'detached HEAD' use "git checkout master"
+ 'detached HEAD' use "GIT CHECKOUT master"
 or to save any changes into a new branch use
-"git checkout -b new_branch"
-this is the same as running 'git branch new_branch'
-and 'git checkout new_branch'
+"GIT CHECKOUT -B new_branch"
+this is the same as running 'GIT BRANCH new_branch'
+and 'GIT CHECKOUT new_branch'
 
-Create Repository "Git init"
-Add files to staged area "Git add <file_name.txt> <file_name2.md>"
-Commit files to repository "Git commit"
+Create Repository "GIT INIT"
+Add files to staged area "GIT ADD <file_name.txt> <file_name2.md>"
+Commit files to repository "GIT COMMIT"
 add commit message, see:
 "C:\...\Projects\Udacity\Git\Commit Message Style Guide"
 It's a good idea to keep a idea history of commits,
@@ -26,14 +26,14 @@ to make this easy to read later use a flow-chart,
 update flow chart with new commit.
 
 Make a new branch for every feature or bug fix.
-View branches "git branch"
-Create new branch "Git branch <new_branch_name>"
-git checkout new_branch_name
+View branches "GIT BRANCH"
+Create new branch "GIT BRANCH <new_branch_name>"
+GIT CHECKOUT new_branch_name
 
 Combine changes, merge new_branch into master branch.
-Merge into Master "Git Merge <master> <new_branch_name>" 
+Merge into Master "GIT MERGE <master> <new_branch_name>" 
 Merge commit message, i.e. 'merged two branches'
-Delete old branch "git branch -d <old_branch_name>"
+Delete old branch "GIT BRANCH -D <old_branch_name>"
 Update flow chart / history diagram 
 to show updated branch and commit.
 
@@ -46,8 +46,8 @@ Find the differences between >>>> and ||||
 then the differences between <<<< and ||||
 
 Resolve the merge confict and remove junk
-git add <file_name>
-git commit
+GIT ADD <file_name>
+GIT COMMIT
 
 
 GitHub: 
@@ -55,20 +55,20 @@ A remote is a stored location of a repository.
 With remotes we can PUSH and PULL.
 Only new commits will be pushed.
 
-See all current remotes "git remote -v"
+See all current remotes "GIT REMOTE -v"
 Naming the first remote as 'origin' is convention.
-Create a remote: "git remote add <origin> <url to repository>"
+Create a remote: "GIT REMOTE ADD <origin> <url to repository>"
 
 Send a branch to a remote repository: 
-"git push <remote_name> <branch_name>" 
+"GIT PUSH <remote_name> <branch_name>" 
 
 Bring changes on GitHub to local repository:
-"git pull <remote> <branch_name>"
+"GIT PULL <remote> <branch_name>"
 
 Get a repository on GitHub to my GitHub profile:
 Fork an existing repository. A fork is a clone on GitHub.
-Pull from GitHub to Local: git clone <url>
-"git remote -v" shows the remote which is auto-created.
+Pull from GitHub to Local: GIT CLONE <url>
+"GIT REMOTE -V" shows the remote which is auto-created.
 Add any Collaborators, on GitHub go to Settings->Collaborators
 then add username.
 
@@ -78,34 +78,35 @@ If we make a change on the local branch 'master' we'll be one
 commit ahead of the branch 'origin/master' until we PUSH or PULL 
 from the remote. 
 To PULL the remote branch without making changes to the local master
-use "git fetch <origin>". 
+use "GIT FETCH <origin>". 
 This allows an updated comparison with origin/master, without the 
 need to combine any changes. 
 (Merging into the master should only be done using pull requests.)
 To combine the remote branch 'origin/master' with the local branch
-'master' use "git merge <master> <origin/master>"
+'master' use "GIT MERGE <master> <origin/master>"
 
-"git pull <remote_name> <branch_name>"
+"GIT PULL <remote_name> <branch_name>"
  is the same as doing
-"git fetch <remote_name>" and 
-"git merge <local_branch_name> <remote_name/branch_name>"
+"GIT FETCH <remote_name>" and 
+"GIT MERGE <local_branch_name> <remote_name/branch_name>"
 
-Update local copies of remote branch "git fetch <remote>"
+Update local copies of remote branch "GIT FETCH <remote>"
 
-Inspect local copies using "git log <remote/branch_name>" 
-or "git diff <remote/branch_name> <local_branch_name>" 
+Inspect local copies using "GIT LOG <remote/branch_name>" 
+or "GIT DIFF <remote/branch_name> <local_branch_name>" 
 
-Use "git status" to show any commit differences and make sure
-everything is as expected. 
+Use "GIT STATUS" to show any commit differences and make sure
+everything is as egitxpected. 
 
 Send changes to a remote:
-"git push <remote_name> <branch_name>" 
+"GIT PUSH <remote_name> <branch_name>" 
 
 
 Collaborating using GitHub: Work flow.
 Get feedback on changes before updating mater branch.
 First: make a change locally in a seperate branch:
 "git branch <changes_branch>"
+"git checkout <changes_branch>"
 *make changes* "git commit -a"
 Second: push the change to my fork.
 "git push <remote_name> <changes_branch>"
@@ -143,9 +144,18 @@ git push <fork_remote> <local_changes_branch> // to push branch to my fork
 git checkout <local_master>
 git push <fork_remote> <local_master>
 
+--------------
+Other useful commands: 
 
+git log --oneline --graph
 
+git mv 
+
+pwd
+
+-------------
+File type:
 .gitignore (git ignore files)
-	for example: Android .apk .gradle ect.
+	for example: Android: .apk .gradle ect.
 	
 	
